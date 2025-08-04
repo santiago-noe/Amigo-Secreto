@@ -1,5 +1,6 @@
-// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
+// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación.
 // juego del amigo secreto
+
 // Array para almacenar los nombres de los amigos
 const amigos = [];
 
@@ -55,4 +56,8 @@ function sortearAmigo() {
 
     // Mostrar resultado
     resultado.innerHTML = `<li>🎉 El amigo secreto sorteado es: <strong>${nombreSorteado}</strong></li>`;
+
+    // Vaciar el array y actualizar la lista en pantalla
+    amigos.length = 0;
+    actualizarLista();
 }
